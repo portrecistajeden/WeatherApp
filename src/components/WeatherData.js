@@ -10,7 +10,7 @@ const WeatherData = ({weatherData}) => {
                 <p id='date'>{moment().format('dddd')}, {moment().format('LL')}</p>
             </div>
             <div id='weatherFlex'>
-                <p id='currentWeather'>{dataLoaded ? weatherData.weather[0].main : ''}</p>
+                <p id='currentWeather'>{dataLoaded ? weatherData.weather[0].description : ''}</p>
                 <div id='weatherRight'>
                     <p>Temperature: {dataLoaded ? Math.floor(weatherData.main.temp) : '0'}&deg;C</p>
                     <p>Feels like: {dataLoaded ? Math.floor(weatherData.main.feels_like) : '0'}&deg;C</p>

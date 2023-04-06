@@ -1,0 +1,27 @@
+#forecastWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.forecastDay {
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    justify-content: center;
+    align-items: center;
+}
+
+.rightColumn {
+    text-align: right;
+}
+
+.weatherIcon {
+    height: 50px;
+    width: 50px;
+    filter: brightness(0.85);
+}
+
+.middleColumn {
+    text-align: center;
+}
