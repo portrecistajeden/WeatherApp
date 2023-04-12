@@ -1,3 +1,8 @@
+:root {
+  --background-box-color: rgba(70, 70, 70, 0.5);
+  --font-color: white;
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;

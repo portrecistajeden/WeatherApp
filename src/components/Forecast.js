@@ -28,7 +28,7 @@ const Forecast = ({forecastData}) => {
 
     return (
         <div id='forecastSection'>
-            <h2>Prognoza pogody</h2>
+            <h2>Weather forecast</h2>
             <div id='forecastWrapper'>
                 {forecast}
             </div>

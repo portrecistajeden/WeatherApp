@@ -6,8 +6,11 @@ const WeatherData = ({weatherData}) => {
     return (
         <div id='weatherWrapper'>
             <div id='cityWrapper'>
-                <p id='cityName'>{dataLoaded ? weatherData.name : 'Choose your city'}</p>
-                <p id='date'>{moment().format('dddd')}, {moment().format('LL')}</p>
+                <img src={weatherData.main!=null ? `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png` : ''} />
+                <div>
+                    <p id='cityName'>{dataLoaded ? weatherData.name : 'Choose your city'}</p>
+                    <p id='date'>{moment().format('dddd')}, {moment().format('LL')}</p>
+                </div>
             </div>
             <div id='weatherFlex'>
                 <p id='currentWeather'>{dataLoaded ? weatherData.weather[0].description : ''}</p>

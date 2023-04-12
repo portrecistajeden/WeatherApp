@@ -7,7 +7,7 @@
 
 .forecastDay {
     display: grid;
-    grid-template-columns: repeat(3, 20%);
+    grid-template-columns: repeat(3, 33%);
     justify-content: center;
     align-items: center;
 }
@@ -24,4 +24,14 @@
 
 .middleColumn {
     text-align: center;
+}
+
+#forecastSection {
+    color: var(--font-color);
+}
+
+#forecastSection h2{
+    width: 50%;
+    text-align: center;
+    margin: 20px auto 20px auto;
 }

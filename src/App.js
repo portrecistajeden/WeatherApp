@@ -57,6 +57,8 @@ const App = () => {
     console.log(backgroundImage);
   },[code])
 
+  console.log(weatherData);
+
   return (
     <div id='appWrapper' style={{
                 backgroundImage: 'url(' + require(`${backgroundImage || defaultBackgroundImage}`) + ')'
@@ -64,11 +66,14 @@ const App = () => {
       <div id='searchBarContainer'>
         <Search onSearchChange={handleOnSearchChange} setWeatherData={setWeatherData} lat={lat} long={long}/>        
       </div>
-      <div className={`contentWrapper weather ${weatherData.length===0 ? 'hidden' : 'visible'}`}>
+      <div className={`contentWrapper weather ${weatherData.length===0 ? 'hidden' : 'visible'}`}> 
         <WeatherData weatherData={weatherData}/>
       </div>
       <div className={`contentWrapper forecast ${weatherData.length===0 ? 'hidden' : 'visible'}`}>
         <Forecast forecastData={forecastData}/>
+      </div>
+      <div>
+
       </div>
     </div>
   );
